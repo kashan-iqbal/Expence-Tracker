@@ -1,0 +1,57 @@
+
+::-webkit-scrollbar{
+    width: 0px;
+}
+.center{
+    width: fit-content;
+    margin: auto;
+}
+ul li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: gray;
+    padding: 0rem 1rem;
+    margin: 0px 0.5rem;
+    margin-top:1rem;
+    border-radius: 10px;
+    
+}
+
+.date{
+    display: block;
+    padding: 5px 5px;
+    background: transparent;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    margin: 7px 0px;
+    border-radius: 8px;
+   
+}
+
+.expenctitle{
+ 
+    font-weight: 1000;
+}
+
+.btn{
+ display: block;
+}
+button{
+    margin: 5px;
+    padding: 5px ;
+    font-weight: 600;
+    border-radius: 8px;
+ border: none;
+ background-color: black;
+ color: white;
+
+}
+button:focus{
+    outline: none;
+}
+button:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+}

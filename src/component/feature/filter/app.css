@@ -1,0 +1,32 @@
+
+.filter{
+    background-color: gray;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 1rem;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px 0px black;
+}
+.filter p{
+    font-size: 1.5rem;
+}
+select{
+    font-weight: 900;
+    padding: 6px 5px;
+    border-radius: 5px;
+    color: white;
+    background-color: black;
+}
+select:hover{
+    background-color: white;
+    color: black;
+}
+select:focus{
+    outline: none;
+    border-radius: 4px;
+}
+option{
+    font-weight: 900;
+}
