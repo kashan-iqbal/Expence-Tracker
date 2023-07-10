@@ -14,7 +14,7 @@ ul li{
     display: grid;
     grid-template-columns: 0.5fr 1fr 0.5fr;
     grid-template-areas: "date expence button";
-
+    box-shadow: 5px 10px 20px 0px black;
     background-color: gray;
     padding: 0rem 1rem;
     margin: 0px 0.5rem;

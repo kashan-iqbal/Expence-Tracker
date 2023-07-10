@@ -3,4 +3,6 @@ footer{
     margin: auto; 
     margin-top: 2rem;
     color: rgb(0, 0, 0);
+    background-color: gray;
+    border-radius: 6px;
 }
