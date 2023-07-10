@@ -25,12 +25,13 @@ const deleteChangeHandler=()=>  getId(id, 'delete');
 
  <div className='date'>
    <p className='month center'>Dec</p>
-   <p className='year'>2023</p>
+   <p className='year center'>2023</p>
    <p className='day center'>12</p>
  </div>
 
  <div className='expenctitle'>
-   {title} &nbsp; - &nbsp;  ${price}
+  
+   {title} &nbsp; <br/> &nbsp;  RS{price}
    
  
  </div>

@@ -1,8 +1,8 @@
 
 .container{
     height: 600px;
-    width:  50%;
-    background-color: whitesmoke;
+    width:  fit-content;
+    background-color: rgba(245, 245, 245, 0.397);
     border-radius: 1rem;
     position: absolute;
     top: 50%;

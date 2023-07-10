@@ -7,9 +7,14 @@
     margin: auto;
 }
 ul li{
-    display: flex;
+    /* display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center; */
+
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 0.5fr;
+    grid-template-areas: "date expence button";
+
     background-color: gray;
     padding: 0rem 1rem;
     margin: 0px 0.5rem;
@@ -19,6 +24,8 @@ ul li{
 }
 
 .date{
+    grid-area: date;
+
     display: block;
     padding: 5px 5px;
     background: transparent;
@@ -28,14 +35,22 @@ ul li{
     border-radius: 8px;
    
 }
+.year{
+    font-size: 20px;
+}
 
 .expenctitle{
- 
+  grid-area: expence;
+  justify-self: center;
+  align-self: center;
     font-weight: 1000;
 }
 
 .btn{
+    grid-area: button;
  display: block;
+ /* padding: 0px 30px; */
+
 }
 button{
     margin: 5px;
@@ -45,7 +60,7 @@ button{
  border: none;
  background-color: black;
  color: white;
-
+ 
 }
 button:focus{
     outline: none;

@@ -52,59 +52,66 @@ const Form = ({getData}) => {
 
 
     <form onSubmit={submitHandler} >
-      <h3>Add Your Expences</h3>
+  <h3>Add Your Expences</h3>
 
-<div className='box'>
+   
   
-<div className='firstform'>
 
-<div className='inner'>
-  <label htmlFor='expenceTitle'>Add Your Expence</label>
 
-  <input type='text'
-    id='expenceTitle'
-    placeholder='Add you Expence'
-    name='title'
-    value={expenceData.title}
-    onChange={inputChangeHandler}
-    required
-  />
+
+ <div className='Sinput'>
+ <label id='expenceTitle' htmlFor='expenceTitle'>Add Expence</label>
+
+<input type='text'
+  id='expenceTitle'
+  placeholder='Add you Expence'
+  name='title'
+  value={expenceData.title}
+  onChange={inputChangeHandler}
+  required
+/>
+ </div>
+
+
+
+<div className='Sprice'>
+<label id='price' htmlFor='price'>price</label>
+
+<input type='number'
+  id='price'
+  name='price'
+  value={expenceData.price}
+  onChange={inputChangeHandler}
+  required
+/>
+
 </div>
 
-<div className='inner'>
-  <label htmlFor='price'>price</label>
+<div className='Sdate'>
+<label htmlFor='expenceData'>Date</label>
 
-  <input type='number'
-    id='price'
-    name='price'
-    value={expenceData.price}
-    onChange={inputChangeHandler}
-    required
-  />
+<input type='date'
+  id='expenceData'
+  name='Date'
+  value={expenceData.Date}
+  onChange={inputChangeHandler}
+  required
+/>
 </div>
 
-</div>
 
-<div className='secondform'>
 
-<div className='inner'>
-  <label htmlFor='expenceData'>Date</label>
 
-  <input type='date'
-    id='expenceData'
-    name='Date'
-    value={expenceData.Date}
-    onChange={inputChangeHandler}
-    required
-  />
-  </div>
-<button className='addexpence'
+  <div className='Sbutton'>
+    
+<button className='addexpence' id='button'
  type='submit'>
   Add Expence
   </button>
-</div>
 
-</div>
+  </div>
+
+
     </form>
 
   )
