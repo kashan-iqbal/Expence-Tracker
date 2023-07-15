@@ -9,13 +9,13 @@ const expneceListArr=[
     id:1,
     title:"expence 01",
     price: 120,
-    date: new Date(),
+    date: new Date("2022-12-24"),
   },
   {
     id:2,
     title:"expence 2",
     price:45,
-    date: new Date(),
+    date: new Date("2022-08-18"),
   
   },
 ]
@@ -50,7 +50,9 @@ const Home = () => {
       // editValues={editValue}
       />
       <Filter />
-      <Expencelist list = {expenceList} getId={getIdHandler} />
+      <Expencelist 
+      list = {expenceList} 
+      getId={getIdHandler} />
 
 
     </Main>

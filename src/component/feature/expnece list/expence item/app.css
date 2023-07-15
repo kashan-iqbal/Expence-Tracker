@@ -60,7 +60,7 @@ button{
  border: none;
  background-color: black;
  color: white;
- 
+  width: 50px;
 }
 button:focus{
     outline: none;

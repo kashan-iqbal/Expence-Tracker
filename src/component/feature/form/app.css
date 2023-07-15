@@ -47,6 +47,7 @@ form #expenceTitle{
     
 }
 
+
 input{
     border: none;
     border-radius: 5px;
@@ -62,6 +63,13 @@ input:focus{
     cursor: pointer;
     font-weight: 900;
     margin-top: 12px;
+
+
+}
+#button{
+    width: 90%;
+    height: 70%;
+
 
 
 }

@@ -6,11 +6,11 @@ const Expenceitem = ({id,title,date,price,getId}) => {
  
 
   const year = date.getFullYear();
-  console.log(year);
+  // console.log(year);
   const month = date.toLocaleString("en-US", { month: "short" });
-  console.log(month);
+  // console.log(month);
   const day = date.toLocaleString("en-US", { day: "2-digit" });
-  console.log(day);
+  // console.log(day);
  
 
 const editChangeHandler=()=> getId(id,'edit');
@@ -24,9 +24,9 @@ const deleteChangeHandler=()=>  getId(id, 'delete');
 <li>
 
  <div className='date'>
-   <p className='month center'>Dec</p>
-   <p className='year center'>2023</p>
-   <p className='day center'>12</p>
+   <p className='month center'>{month}</p>
+   <p className='year center'>{year}</p>
+   <p className='day center'>{day}</p>
  </div>
 
  <div className='expenctitle'>

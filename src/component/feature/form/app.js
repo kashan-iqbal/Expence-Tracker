@@ -44,7 +44,7 @@ const Form = ({getData}) => {
       date:new Date(expenceData.date)
 
     }
-    console.log(data);
+    
     getData(data);
   }
 
@@ -64,7 +64,7 @@ const Form = ({getData}) => {
 
 <input type='text'
   id='expenceTitle'
-  placeholder='Add you Expence'
+  placeholder='Expence Name'
   name='title'
   value={expenceData.title}
   onChange={inputChangeHandler}
@@ -80,6 +80,7 @@ const Form = ({getData}) => {
 <input type='number'
   id='price'
   name='price'
+  placeholder='Price'
   value={expenceData.price}
   onChange={inputChangeHandler}
   required
@@ -92,8 +93,8 @@ const Form = ({getData}) => {
 
 <input type='date'
   id='expenceData'
-  name='Date'
-  value={expenceData.Date}
+  name='date'
+  value={expenceData.date}
   onChange={inputChangeHandler}
   required
 />
